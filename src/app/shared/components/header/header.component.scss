@@ -1,0 +1,16 @@
+:host {
+  header {
+    background: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px;
+
+    .logo{
+      //background-image:;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin: 0 auto;
+      width: 150px;
+    }
+  }
+}
