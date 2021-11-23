@@ -10,7 +10,7 @@ interface IHall{
 @Component({
   selector: 'app-reserved',
   templateUrl: './reserved.component.html',
-  styleUrls: ['./reserved.component.css']
+  styleUrls: ['./reserved.component.scss']
 })
 export class ReservedComponent implements OnInit {
   reserved!: FormGroup;
@@ -19,7 +19,8 @@ export class ReservedComponent implements OnInit {
     {value: '2', viewValue: 'Жолтая'},
     {value: '3', viewValue: 'Интерстелар'},
   ];
-  selected!: Date | null;
+  selected: any;
+  formatLabel: any;
 
   constructor(private reservedServed: ReservedService) {}
 

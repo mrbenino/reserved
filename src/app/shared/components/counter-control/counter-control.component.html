@@ -1,0 +1,7 @@
+<div class="custom-input-wrapper">
+  <button class="plus" type="button" (click)="up()">+</button>
+  <span *ngIf="valueShow" >{{ valueShow }}</span>
+  <span *ngIf="!valueShow" >0</span>
+  <button class="minus" type="button" (click)="down()">-</button>
+</div>
+

@@ -11,6 +11,7 @@ import {MatSelectModule} from "@angular/material/select";
 import {MatInputModule} from "@angular/material/input";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatCardModule} from "@angular/material/card";
+import {MatSliderModule} from "@angular/material/slider";
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import {MatCardModule} from "@angular/material/card";
     MatSelectModule,
     MatInputModule,
     MatDatepickerModule,
-    MatCardModule
+    MatCardModule,
+    MatSliderModule
   ],
   exports: [
     SharedModule,

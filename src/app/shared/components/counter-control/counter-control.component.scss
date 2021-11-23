@@ -1,0 +1,27 @@
+.plus {
+  width: 34px;
+  height: 39px;
+  background: transparent;
+  border: 1px solid #B4B4BE;
+  border-radius: 3px 0 0 3px;
+  margin: -1px;
+}
+
+.custom-input-wrapper {
+  border: 1px solid #B4B4BE;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.minus {
+  width: 34px;
+  height: 39px;
+  background: transparent;
+  border: 1px solid #B4B4BE;
+  border-radius: 0 3px 3px 0;
+  margin: -1px;
+}

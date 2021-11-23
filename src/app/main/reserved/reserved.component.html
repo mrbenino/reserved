@@ -13,7 +13,21 @@
       <input matInput formControlName="name">
     </mat-form-field>
   </div>
-<!--  <mat-card class="demo-inline-calendar-card">-->
-<!--    <mat-calendar (selectedChange)="selected = $event"></mat-calendar>-->
-<!--  </mat-card>-->
+  <mat-card class="inline-calendar-card">
+    <mat-calendar (selectedChange)="selected = $event"></mat-calendar>
+  </mat-card>
 </form>
+
+
+
+<h1>api</h1>
+
+<p>Google Sheets API Quickstart</p>
+
+<!--Add buttons to initiate auth sequence and sign out-->
+<button id="authorize_button" style="display: none;">Authorize</button>
+<button id="signout_button" style="display: none;">Sign Out</button>
+
+<pre id="content" style="white-space: pre-wrap;"></pre>
+
+

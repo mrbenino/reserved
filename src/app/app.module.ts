@@ -5,7 +5,8 @@ import {AppComponent} from './app.component';
 import {MainModule} from './main/main.module';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule} from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import {HttpClientModule} from '@angular/common/http';
+import {SharedModule} from "./shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     MainModule,
     BrowserAnimationsModule,
+    SharedModule,
     FormsModule
   ],
   providers: [],
