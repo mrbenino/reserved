@@ -12,6 +12,7 @@ import {MatInputModule} from "@angular/material/input";
 import {MatDatepickerModule} from "@angular/material/datepicker";
 import {MatCardModule} from "@angular/material/card";
 import {MatSliderModule} from "@angular/material/slider";
+import {MatButtonModule} from "@angular/material/button";
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import {MatSliderModule} from "@angular/material/slider";
     MatInputModule,
     MatDatepickerModule,
     MatCardModule,
-    MatSliderModule
+    MatSliderModule,
+    MatButtonModule
   ],
   exports: [
     SharedModule,

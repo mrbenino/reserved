@@ -3,6 +3,7 @@ import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {ReservedComponent} from "./reserved.component";
 import {MatNativeDateModule} from "@angular/material/core";
+import {ReservedService} from "./reserved.service";
 
 const routes: Routes = [
   {
@@ -17,8 +18,8 @@ const routes: Routes = [
     CommonModule,
     RouterModule.forChild(routes),
     MatNativeDateModule,
-    // MatMomentDateModule,
-  ]
+  ],
+  providers: [ReservedService]
 })
 export class ReservedModule {
 }

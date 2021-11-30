@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {FormGroup} from "@angular/forms";
 import {ReservedService} from "./reserved.service";
+import {IReserved} from "../../shared/interfaces/reserved";
 
 interface IHall{
   value: string;
@@ -20,16 +21,26 @@ export class ReservedComponent implements OnInit {
     {value: '3', viewValue: 'Интерстелар'},
   ];
   selected: any;
-  formatLabel: any;
+  records: Array<IReserved> = [];
 
   constructor(private reservedServed: ReservedService) {}
 
   ngOnInit(): void {
     this.reserved = this.reservedServed.initForm()
+    this.reservedServed.getRecords().subscribe(result => {
+      this.records = result
+    })
   }
 
   formSubmit(): void {
-
+    const date: IReserved = {
+      hall: this.reserved.value.hall,
+      name: this.reserved.value.name,
+      date: this.selected
+    }
+    this.reservedServed.createdReserved(date).subscribe(result => {
+      this.records.push(result as IReserved)
+    })
   }
 
 }
