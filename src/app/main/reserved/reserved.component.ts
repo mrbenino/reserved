@@ -36,7 +36,9 @@ export class ReservedComponent implements OnInit {
     const date: IReserved = {
       hall: this.reserved.value.hall,
       name: this.reserved.value.name,
-      date: this.selected
+      date: this.selected,
+      rangeTimeStart: this.reserved.value.rangeTimeStart,
+      rangeTimeEnd: this.reserved.value.rangeTimeEnd
     }
     this.reservedServed.createdReserved(date).subscribe(result => {
       this.records.push(result as IReserved)

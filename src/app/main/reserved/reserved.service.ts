@@ -24,6 +24,14 @@ export class ReservedService {
       ]],
       name: ['', [
         Validators.required,
+      ]],
+      rangeTimeStart: ['', [
+        Validators.required,
+        Validators.pattern(/^([\d]{1}|[\d]{2}):([\d]{1}|[\d]{2})$/)
+      ]],
+      rangeTimeEnd: ['', [
+        Validators.required,
+        Validators.pattern(/^([\d]{1}|[\d]{2}):([\d]{1}|[\d]{2})$/)
       ]]
     })
   }

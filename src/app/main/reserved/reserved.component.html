@@ -13,6 +13,16 @@
       <input matInput formControlName="name">
     </mat-form-field>
   </div>
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>с</mat-label>
+      <input matInput formControlName="rangeTimeStart" placeholder="16:00">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>до</mat-label>
+      <input matInput formControlName="rangeTimeEnd" placeholder="18:00">
+    </mat-form-field>
+  </div>
   <mat-card class="inline-calendar-card">
     <mat-calendar formControlName="date" (selectedChange)="selected = $event"></mat-calendar>
   </mat-card>
@@ -24,4 +34,8 @@
   <span>{{reserved.name}}</span>
   <span> / </span>
   <span>{{reserved.hall}}</span>
+  <span> / </span>
+  <span>{{reserved.rangeTimeStart}}</span>
+  <span> / </span>
+  <span>{{reserved.rangeTimeEnd}}</span>
 </div>
